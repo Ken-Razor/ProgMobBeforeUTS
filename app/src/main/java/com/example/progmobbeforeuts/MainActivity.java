@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Button myBtn = (Button)findViewById((R.id.button1));
         final EditText myEditText = (EditText)findViewById(R.id.editText1);
         Button btnHelp = (Button)findViewById(R.id.btnHelp);
+        Button btnTracker = (Button)findViewById(R.id.btnTracker);
 
         //action
         txtView.setText(R.string.text_hello_world);
@@ -41,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
                 b.putString("help_string",myEditText.getText().toString());
                 intent.putExtras(b);
 
+                startActivity(intent);
+            }
+        }));
+        btnTracker.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,TrackerActivity.class);
                 startActivity(intent);
             }
         }));
