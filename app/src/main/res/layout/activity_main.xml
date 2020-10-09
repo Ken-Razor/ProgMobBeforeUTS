@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Card"
+        android:text="Card View"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toEndOf="@+id/buttonRecycleView"
