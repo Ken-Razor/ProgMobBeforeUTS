@@ -45,7 +45,7 @@ public class MahasiswaRecyclerAdapter extends RecyclerView.Adapter<MahasiswaRecy
 
         holder.tvNama.setText(m.getNama());
         holder.tvNim.setText(m.getNim());
-        holder.tvNoTelp.setText(m.getNotelp());
+        holder.tvNoTelp.setText(m.getNoTelp());
     }
 
     @Override
