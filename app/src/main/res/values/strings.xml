@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">ProgMobBeforeUTS</string>
     <string name="text_hello_world">Hello Progmob 2020</string>
+
+    <string name="register">REGISTER</string>
+    <string name="login_nim_hint">NIM</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Sudah Punya Akun? Sign In</string>
+    <string name="login_signup_hint">Endak Punya Akun? Sign Up</string>
+
 </resources>

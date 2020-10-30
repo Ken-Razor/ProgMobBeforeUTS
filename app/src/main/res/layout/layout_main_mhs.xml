@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Pertemuan567_CRUD.MainMenuActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgBtnMhs"
+                    android:layout_width="184dp"
+                    android:layout_height="231dp"
+                    app:srcCompat="@drawable/mahasiswa" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnDosen"
+                    android:layout_width="184dp"
+                    android:layout_height="231dp"
+                    app:srcCompat="@drawable/dosen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgBtnMatkul"
+                    android:layout_width="184dp"
+                    android:layout_height="231dp"
+                    app:srcCompat="@drawable/matakuliah" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnJadwal"
+                    android:layout_width="184dp"
+                    android:layout_height="231dp"
+                    app:srcCompat="@drawable/jadwal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

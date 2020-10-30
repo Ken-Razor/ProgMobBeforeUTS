@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.example.progmobbeforeuts.MainActivity;
 import com.example.progmobbeforeuts.Pertemuan2.CardViewTestActivity;
 import com.example.progmobbeforeuts.R;
+import com.example.progmobbeforeuts.Uts.MenuActivity;
 
 public class MainMhsActivity extends AppCompatActivity {
 
@@ -22,11 +23,13 @@ public class MainMhsActivity extends AppCompatActivity {
         Button btnAddMhs = (Button)findViewById(R.id.buttonAddMhs);
         Button btnUpdateMhs = (Button)findViewById(R.id.buttonUpdateMhs);
         Button btnDeleteMhs = (Button)findViewById(R.id.buttonDelMhs);
+        Button btnMainMenu = (Button)findViewById(R.id.buttonMainMenu);
 
         btnGetMhs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMhsActivity.this, MahasiswaGetAllActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
         });
@@ -34,6 +37,7 @@ public class MainMhsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMhsActivity.this, MahasiswaAddActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
         });
@@ -41,6 +45,7 @@ public class MainMhsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMhsActivity.this, MahasiswaUpdateActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
         });
@@ -48,7 +53,15 @@ public class MainMhsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMhsActivity.this, MahasiswaDeleteActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
+            }
+        });
+        btnMainMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentMain = new Intent(MainMhsActivity.this, MenuActivity.class);
+                startActivity(intentMain);
             }
         });
     }

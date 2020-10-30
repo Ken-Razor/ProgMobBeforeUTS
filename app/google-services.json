@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "404561787294",
+    "firebase_url": "https://progmobbefuts.firebaseio.com",
+    "project_id": "progmobbefuts",
+    "storage_bucket": "progmobbefuts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404561787294:android:64eb3a96d27d77ac51be8f",
+        "android_client_info": {
+          "package_name": "com.example.progmobbeforeuts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404561787294-bcaujkdtc5jibfa8b4178cr3u7v4h9jn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.progmobbeforeuts",
+            "certificate_hash": "c1125d73e07094ceefd9a59e509fb1d10ba2d48e"
+          }
+        },
+        {
+          "client_id": "404561787294-no5mfpsergt63nldj9hjmjt66jummd3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo-PdLOEmvJ3c7tLKjaAa5kLTSuRodssM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404561787294-no5mfpsergt63nldj9hjmjt66jummd3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

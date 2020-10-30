@@ -7,18 +7,32 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo_siap"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo_siap_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Crud.MahasiswaDeleteActivity"></activity>
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Crud.MatakuliahDelActivity"></activity>
+        <activity android:name=".Crud.MatakuliahUpdateActivity" />
+        <activity android:name=".Crud.MatakuliahAddActivity" />
+        <activity android:name=".Crud.MatakuliahGetAllActivity" />
+        <activity android:name=".Crud.MainMatakuliahActivity" />
+        <activity android:name=".Crud.DosenDeleteActivity" />
+        <activity android:name=".Crud.DosenUpdateActivity" />
+        <activity android:name=".Crud.DosenAddActivity" />
+        <activity android:name=".Crud.DosenGettAllActivity" />
+        <activity android:name=".Crud.MainDosenActivity" />
+        <activity android:name=".Uts.MenuActivity" />
+        <activity android:name=".Uts.LoginActivity" />
+        <activity android:name=".Uts.RegisterActivity" />
+        <activity android:name=".Crud.MainMhsActivity" />
+        <activity android:name=".Crud.MahasiswaDeleteActivity" />
         <activity android:name=".Crud.MahasiswaUpdateActivity" />
         <activity android:name=".Crud.MahasiswaAddActivity" />
         <activity android:name=".Crud.MahasiswaGetAllActivity" />
-        <activity
-            android:name=".Crud.MainMhsActivity"
-            android:label="Menu CRUD Mahasiswa">
+        <activity android:name=".Uts.SplashScreen.SplashActivity">
+
+            <!-- android:label="Menu CRUD Mahasiswa"> -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

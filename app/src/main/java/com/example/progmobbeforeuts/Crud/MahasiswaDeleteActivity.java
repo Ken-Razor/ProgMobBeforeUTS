@@ -49,8 +49,8 @@ public class MahasiswaDeleteActivity extends AppCompatActivity {
                         Toast.makeText(MahasiswaDeleteActivity.this, "Galat Error", Toast.LENGTH_LONG).show();
                     }
                 });
-                Intent intentBalikMainMhs = new Intent(MahasiswaDeleteActivity.this, MainMhsActivity.class);
-                startActivity(intentBalikMainMhs);
+                Intent intentBackMainMhs = new Intent(MahasiswaDeleteActivity.this, MainMhsActivity.class);
+                startActivity(intentBackMainMhs);
             }
         });
     }

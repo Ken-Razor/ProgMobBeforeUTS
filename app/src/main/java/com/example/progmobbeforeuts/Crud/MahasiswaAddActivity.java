@@ -3,6 +3,7 @@ package com.example.progmobbeforeuts.Crud;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,7 +27,7 @@ public class MahasiswaAddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mahasiswa_add);
         EditText editNama = (EditText)findViewById(R.id.editTextNama);
-        EditText editNim = (EditText)findViewById(R.id.editTextNim);
+        EditText editNim = (EditText)findViewById(R.id.editTextNimTambah);
         EditText editAlamat = (EditText)findViewById(R.id.editTextAlamat);
         EditText editEmail = (EditText)findViewById(R.id.editTextEmail);
         Button btnSimpan = (Button)findViewById(R.id.buttonSimpan);
@@ -53,6 +54,8 @@ public class MahasiswaAddActivity extends AppCompatActivity {
                         Toast.makeText(MahasiswaAddActivity.this, "GAGAL!", Toast.LENGTH_LONG).show();
                     }
                 });
+                Intent intentBackMainMhs = new Intent(MahasiswaAddActivity.this, MainMhsActivity.class);
+                startActivity(intentBackMainMhs);
             }
         });
     }
